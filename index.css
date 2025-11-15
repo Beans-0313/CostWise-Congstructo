@@ -1,0 +1,208 @@
+    /* Navigation bar */
+.navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #2c3e50;
+            padding: 10px 20px;
+        }
+
+        .navbar .title {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+    /* Home page na sliders */
+.material_img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 5px;
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+    }
+
+    .homepic {
+      position: relative;
+      width: 100%;
+      height: 60vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .homepic-text {
+      background: rgba(0,0,0,0.4);
+      padding: 40px;
+      border-radius: 8px;
+    }
+
+    .homepic h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .homepic p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .homepic button {
+      padding: 12px 25px;
+      border: none;
+      background: orange;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .img_slider {
+      position: relative;
+      padding: 20px;
+      background: white;
+    }
+
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 15px;
+    }
+
+    .material_box {
+      min-width: 150px;
+      background: orange;
+      color: white;
+      padding: 20px;
+      border-radius: 6px;
+      text-align: center;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+
+    .the_button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: black;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      z-index: 10;
+    }
+
+    .the_button.Left { left: 5px; }
+    .the_button.Right { right: 5px; }
+
+    @media(max-width: 600px) {
+      .homepic h1 { font-size: 24px; }
+      .homepic p { font-size: 16px; }
+    }
+
+    .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px;
+            background-color: #c9b08a; /* construction sand/wood tone */
+        }
+        .intro_text {
+            max-width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 30px;
+        }
+        .intro_text h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: #2e2e2e;
+        }
+        .intro_text p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #b85c00;
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .btn:hover {
+            background-color: #8a4600;
+        }
+
+
+         .intro_text {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .intro_bold {
+            color: #b85c00;
+        }
+
+    .FAQS {
+      padding: 30px;
+      background: white;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 900px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #1e4a6e;
+    }
+    p, li {
+      margin-bottom: 10px;
+    }
+    .faq-item {
+      margin-bottom: 20px;
+    }
+    .faq-item b {
+      color: #1e4a6e;
+    }
+
+    .faq-item {margin-bottom:15px; padding:15px; border:1px solid #ddd; border-radius:8px; background:#fafafa;}
+    .faq-question {font-weight:bold; color:#1e4a6e; display:flex; justify-content:space-between; cursor:pointer;}
+    .faq-icon {transition:0.3s; font-size:20px;}
+    .faq-answer {max-height:0; overflow:hidden; transition:max-height 0.4s ease; padding-top:5px;}
+
+    

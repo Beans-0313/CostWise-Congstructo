@@ -3,44 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CostWise Congstructo</title>
- <!--  <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #2c3e50;
-            padding: 10px 20px;
-        }
-
-        .navbar .title {
-            color: white;
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        .navbar ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-        }
-
-        .navbar ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        .navbar ul li a:hover {
-            text-decoration: underline;
-        }
-    </style> -->
+    <link rel="stylesheet" href="index.css">
 
 </head>
 <body>
@@ -58,40 +21,107 @@
     </header>
 
     <main>
-        <section>
-            <p><b>Browse Products:</b></p> Explore our wide range of construction materials online, including cement, steel, bricks, aggregates, and more.
+        <section class="homepic" id="homepic" style="background-image: url('your-image.jpg');">
+            <div class="homepic-text">
+                <h1>Stronger Materials for Stronger Builds </h1>
+                    <p>Supplying the trusted, reliable construction products you need to build with confidence, from small home projects to large-scale developments.</p>
+            </div>
+        </section>
 
-            <p><b>Select & Order:</b></p> Choose the products you need, specify quantities, and place your order quickly through our user-friendly platform.
+        <section class="img_slider">
+                <button class="the_button Left" onclick="slideLeft()">&#9664;</button>
+                <button class="the_button Right" onclick="slideRight()">&#9654;</button>
 
-            <p><b>Fast Delivery:</b></p> Get your materials delivered safely to your site on time, every time.
+                    <div class="slider" id="img_slider">
+                    <div class="material_box"><img src="inspo.jfif" class="material_img"><span>Excavators</span></div>
+                    <div class="material_box">Cranes</div>
+                    <div class="material_box">Bulldozers</div>
+                    <div class="material_box">Loaders</div>
+                    <div class="material_box">Dump Trucks</div>
+                    <div class="material_box"><img src="inspo.jfif" class="material_img"><span>Excavators</span></div>
+                    <div class="material_box">Cranes</div>
+                    <div class="material_box">Bulldozers</div>
+                    <div class="material_box">Loaders</div>
+                    <div class="material_box">Dump Trucks</div>
+                    <div class="material_box"><img src="inspo.jfif" class="material_img"><span>Excavators</span></div>
+                    <div class="material_box">Cranes</div>
+                    <div class="material_box">Bulldozers</div>
+                    <div class="material_box">Loaders</div>
+                    <div class="material_box">Dump Trucks </div>
+            </section>
 
-            <p><b>Support & Guidance:</b></p> Our expert team is available to assist with product selection, technical advice, and any order-related queries.
+            <section class="short_info">
+                    <div class="intro">
+                    <div class="intro_text">
+                        <div class="text-block">
+                            <h1>Cost Wise Materials — Premium Construction Supplies at Your Doorsteps!</h1>
+                        </div>
+                        <div class="text-block">
+                            <p class="intro_parag"><b class="intro_bold">Your one stop destination for high-quality building materials!</b> Whether you're constructing a home, managing a large-scale project, or sourcing materials for renovation, we connect you directly to trusted suppliers offering durable, industry certified products. Shop smarter, faster, and more efficiently with access to everything you need. All of it is in one platform tailored for builders, contractors, and DIY enthusiasts.</p>
+                            <p class="intro_parag"><b class="intro_bold">Experience convenience like never before.</b> Explore an extensive catalog of structural and finishing materials, compare specifications, check availability, and order instantly. With transparent pricing, professional guidance, and dependable site-to-site deliveries, your construction workflow becomes smoother and more organized from the moment you land on our page.</p>
+                            <a class="btn" href="Materials.html">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <section class="FAQS">
+            <h2>How It Works</h2>
+                <p><b>Browse Products:</b></p> Explore our wide range of construction materials online, including cement, steel, bricks, aggregates, and more.
+                <p><b>Get Product Details:</b> Click on any product to view specifications, usage, pricing, and availability.</p>
+                <p><b>Select & Order:</b></p> Choose the products you need, specify quantities, and place your order quickly through our user-friendly platform.
+                <p><b>Fast Delivery:</b></p> Get your materials delivered safely to your site on time, every time.
+                <p><b>Delivery to Your Site:</b> Our logistics team ensures fast and safe delivery right to your construction site or warehouse.</p>
+                <p><b>Support & Guidance:</b></p> Our expert team is available to assist with product selection, technical advice, and any order-related queries.
+
         </section>
         
-        <section>
-            <h1> Frequently Asked Questions (FAQs) </h1>
+        <section class="FAQS">
+  <h1>Frequently Asked Questions (FAQs)</h1>
 
-            Q1: What types of construction materials do you supply? <br>
-            A1: We supply a wide range of construction materials including cement, steel, bricks, sand, aggregates, wood, and more. <br>
+  <div class="faq">
+    <div class="faq-item" onclick="toggleFAQ('faq1')">
+      <div class="faq-question">Q1: What types of construction materials do you supply? <span class="faq-icon">+</span></div>
+      <div id="faq1" class="faq-answer">We supply a wide range of construction materials including cement, steel, bricks, sand, aggregates, wood, and more.</div>
+    </div>
 
-            Q2: Do you deliver to all locations?
-            A2: We provide delivery services to most areas. During checkout, you can confirm if your location is covered.
+    <div class="faq-item" onclick="toggleFAQ('faq2')">
+      <div class="faq-question">Q2: Do you deliver to all locations? <span class="faq-icon">+</span></div>
+      <div id="faq2" class="faq-answer">We provide delivery services to most areas. During checkout, you can confirm if your location is covered.</div>
+    </div>
 
-            Q3: Can I get bulk orders?
-            A3: Yes! We handle bulk orders for large construction projects and offer competitive pricing.
+    <div class="faq-item" onclick="toggleFAQ('faq3')">
+      <div class="faq-question">Q3: Can I get bulk orders? <span class="faq-icon">+</span></div>
+      <div id="faq3" class="faq-answer">Yes! We handle bulk orders for large construction projects and offer competitive pricing.</div>
+    </div>
 
-            Q4: How can I pay for my order?
-            A4: We accept multiple payment methods including credit/debit cards, online banking, and cash on delivery in selected areas.
+    <div class="faq-item" onclick="toggleFAQ('faq4')">
+      <div class="faq-question">Q4: How can I pay for my order? <span class="faq-icon">+</span></div>
+      <div id="faq4" class="faq-answer">We accept multiple payment methods including credit/debit cards, online banking, and cash on delivery.</div>
+    </div>
 
-            Q5: Do you offer technical support or product guidance?
-            A5: Absolutely! Our team of experts is always ready to guide you on material selection and usage.
-        </section>
+    <div class="faq-item" onclick="toggleFAQ('faq5')">
+      <div class="faq-question">Q5: Do you offer technical support or product guidance? <span class="faq-icon">+</span></div>
+      <div id="faq5" class="faq-answer">Absolutely! Our experts can help you choose materials and understand proper usage.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFAQ('faq6')">
+      <div class="faq-question">Q6: Are your materials certified for quality? <span class="faq-icon">+</span></div>
+      <div id="faq6" class="faq-answer">Yes, all our products meet industry standards for quality, safety, and durability.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFAQ('faq7')">
+      <div class="faq-question">Q7: How do I track my order? <span class="faq-icon">+</span></div>
+      <div id="faq7" class="faq-answer">You'll receive a tracking link via email or SMS after confirming your order.</div>
+    </div>
+  </div>
+</section>
     </main>
 
 
     <footer>
 
     </footer>    
-
+    <script src="index.js"></script>
 </body>
 </html>
