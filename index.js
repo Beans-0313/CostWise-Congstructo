@@ -54,3 +54,12 @@ setInterval(() => {
   }
   
   document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+  function toggleFAQ(id) {
+const answer = document.getElementById(id);
+answer.style.display = answer.style.display === "block" ? "none" : "block";
+}
+
+document.getElementById("contactForm").addEventListener("submit", function () {
+    setTimeout(() => this.reset(), 500);
+});

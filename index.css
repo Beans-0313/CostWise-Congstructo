@@ -306,15 +306,21 @@
 }
 
 
-    .FAQS {
+  /*  .FAQS {
       padding: 30px;
       background: white;
       margin: 20px auto;
       width: 90%;
       max-width: 900px;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    .FAQS {
+flex: 3;
+background: white;
+padding: 20px;
+border-radius: 12px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
     h1 {
       color: #1e4a6e;
     }
@@ -332,6 +338,162 @@
     .faq-question {font-weight:bold; color:#1e4a6e; display:flex; justify-content:space-between; cursor:pointer;}
     .faq-icon {transition:0.3s; font-size:20px;}
     .faq-answer {max-height:0; overflow:hidden; transition:max-height 0.4s ease; padding-top:5px;}
+
+
+    .FAQS-container {
+font-weight: bold;
+border-left: 4px solid #1e90ff;
+padding-left: 10px;
+}
+
+
+.contact-card form {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+
+.contact-card input,
+.contact-card textarea {
+width: 100%;
+padding: 10px 12px;
+border: 1px solid #ccc;
+border-radius: 8px;
+font-size: 15px;
+background: #fafafa;
+}
+
+
+.contact-card textarea {
+height: 120px;
+resize: none;
+}
+
+
+.contact-card button {
+background: #1e90ff;
+color: white;
+border: none;
+padding: 12px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 16px;
+transition: 0.2s;
+}
+
+
+.contact-card button:hover {
+background: #0f6bc6;
+}
+
+
+@media (max-width: 900px) {
+.FAQS-container {
+flex-direction: column;
+}
+
+
+.contact-card {
+width: 100%;
+position: relative;
+}
+} */
+
+.FAQS-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.FAQS {
+  flex: 3;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.faq-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.faq-question {
+  font-weight: bold;
+}
+
+.faq-answer {
+  display: none;
+  padding-top: 5px;
+}
+
+.contact-card {
+  flex: 1.2;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 20px;
+}
+
+.contact-card h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  border-left: 4px solid #1e90ff;
+  padding-left: 10px;
+}
+
+.contact-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #fafafa;
+}
+
+.contact-card textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-card button {
+  background: #1e90ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.contact-card button:hover {
+  background: #0f6bc6;
+}
+
+@media (max-width: 900px) {
+  .FAQS-container {
+    flex-direction: column;
+  }
+
+  .contact-card {
+    width: 100%;
+    position: relative;
+  }
+}
 
     /* Footer styles */
 .site-footer{
